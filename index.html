@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -174,9 +173,9 @@
       </div>
     </div>
 
-    <form id="contact-form">
-      <input type="text" name="user_name" placeholder="Your Name" required />
-      <input type="email" name="user_email" placeholder="Your Email" required />
+    <form action="mailto:arish253545@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>

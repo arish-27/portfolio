@@ -64,33 +64,4 @@ cards.forEach(card => {
   });
 });
 
-// EMAILJS INTEGRATION
-(function () {
-  // https://dashboard.emailjs.com/admin/account
-  emailjs.init({
-    publicKey: "YOUR_PUBLIC_KEY",
-  });
-})();
 
-window.onload = function () {
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    // Change button text to indicate loading
-    const btn = this.querySelector('button');
-    const originalText = btn.innerText;
-    btn.innerText = 'Sending...';
-
-    // these IDs from the previous steps
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-      .then(() => {
-        btn.innerText = originalText;
-        alert('Message sent successfully!');
-        this.reset();
-      }, (error) => {
-        btn.innerText = originalText;
-        alert('Failed to send message. Please try again.');
-        console.log('FAILED...', error);
-      });
-  });
-}
