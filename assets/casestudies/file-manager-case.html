@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Manager App - Case Study | Arish S</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Case Study Specific Styles */
+        .case-study {
+            padding: 100px 9vw 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .case-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .case-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        .case-header p {
+            font-size: 1.2rem;
+            color: var(--secondary-text);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .case-image {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 40px 0;
+        }
+
+        .case-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .case-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--main-color);
+        }
+
+        .case-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin-bottom: 15px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .case-details {
+                grid-template-columns: 1fr;
+            }
+
+            .case-header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (Reused) -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">ARISH S<span>.</span></h1>
+            <ul class="nav-links">
+                <li><a href="../../index.html#home">Home</a></li>
+                <li><a href="../../index.html#projects">Projects</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="case-study">
+        <div class="case-header">
+            <h1>File Manager App</h1>
+            <p>A minimalist and intuitive file manager designed to simplify digital organization.</p>
+        </div>
+
+        <img src="../../images/projects/file-manager-poster.png" alt="File Manager App Design" class="case-image">
+
+        <div class="case-details">
+            <div class="case-section">
+                <h2>Overview</h2>
+                <p>The Goal was to design a clean, user-friendly file manager that avoids clutter and provides quick
+                    access to essential files. The focus was on visual hierarchy and ease of navigation.</p>
+            </div>
+            <div class="case-section">
+                <h2>The Solution</h2>
+                <p>I utilized a card-based layout with distinct color coding for different file types (Music, Files,
+                    Videos). The "Recent Downloads" and "Memories" sections provide quick access sections that most
+                    users look for immediately. A dark mode aesthetic with vibrant accents was chosen to make the
+                    interface pop without being overwhelming.</p>
+            </div>
+        </div>
+
+        <div class="case-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Storage Visualization:</strong> A clear, graphical representation of used vs. free space.
+                </li>
+                <li><strong>Quick Categories:</strong> One-tap access to major file types.</li>
+                <li><strong>Recent Activity:</strong> Immediate visibility of recently downloaded or opened files.</li>
+            </ul>
+        </div>
+
+        <div class="case-header">
+            <a href="../../index.html#projects" class="btn back-btn">Back to Projects</a>
+        </div>
+
+    </main>
+
+    <!-- Footer (Reused) -->
+    <footer>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/arish-s-a31a5737a" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/arishdesigner" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://dribbble.com/arishdesigner" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+        </div>
+        <p>© 2025 Arish S | Designed by Arish</p>
+    </footer>
+
+</body>
+
+</html>
