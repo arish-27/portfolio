@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donut Delight - Case Study | Arish S</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Reuse Case Study Styles */
+        .case-study {
+            padding: 100px 9vw 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .case-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .case-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        .case-header p {
+            font-size: 1.2rem;
+            color: var(--secondary-text);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .case-image {
+            width: 100%;
+            max-width: 900px;
+            display: block;
+            margin: 40px auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .case-image:hover {
+            transform: scale(1.02);
+        }
+
+        .case-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .case-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--main-color);
+            position: relative;
+            display: inline-block;
+        }
+
+        .case-section h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 50px;
+            height: 3px;
+            background: var(--main-color);
+        }
+
+        .case-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin-bottom: 15px;
+        }
+
+        .case-section ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .case-section ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 40px;
+            background: var(--main-color);
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #0056b3;
+        }
+
+        .prototype-btn {
+            display: inline-block;
+            margin: 20px 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: bold;
+        }
+
+        .prototype-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .case-details {
+                grid-template-columns: 1fr;
+            }
+
+            .case-header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (Reused) -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">ARISH S<span>.</span></h1>
+            <ul class="nav-links">
+                <li><a href="../../index.html#home">Home</a></li>
+                <li><a href="../../index.html#projects">Projects</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="case-study">
+        <div class="case-header">
+            <h1>Donut Delight – Flavor Showcase</h1>
+            <p>A vibrant and interactive product showcase prototype designed in <strong>Figma</strong> featuring
+                delicious donut flavors.</p>
+        </div>
+
+        <img src="../../images/projects/donut-delight-poster.jpg" alt="Donut Delight Flavor Showcase"
+            class="case-image">
+
+        <div style="text-align: center;">
+            <a href="https://www.figma.com/proto/5l0BZCA2VQgZZxtrY0zfL1/donut-project--Copy-?page-id=0%3A1&node-id=1-2&p=f&viewport=21%2C289%2C0.13&t=9NKaoznsifSGB8oh-1&scaling=scale-down&content-scaling=fixed"
+                target="_blank" class="prototype-btn">
+                <i class="fa-brands fa-figma"></i> View Interactive Prototype
+            </a>
+        </div>
+
+        <div class="case-details">
+            <div class="case-section">
+                <h2>The Concept</h2>
+                <p>The goal was to create an eye-catching product showcase that highlights three unique donut flavors:
+                    <strong>Blueberry</strong>, <strong>Green Apple</strong>, and <strong>Caramel</strong>. Each flavor
+                    panel uses a distinct color scheme that matches the donut's personality.</p>
+                <p>The floating donut effect with scattered mint leaves creates a sense of freshness and movement,
+                    making the design feel alive and appetizing.</p>
+            </div>
+            <div class="case-section">
+                <h2>The Tool: Figma</h2>
+                <p>This project was entirely designed and prototyped in <strong>Figma</strong>, utilizing:</p>
+                <ul>
+                    <li>Auto-layout for responsive panel arrangement</li>
+                    <li>Component variants for each flavor</li>
+                    <li>Smooth prototype transitions between screens</li>
+                    <li>Color-coded backgrounds for visual distinction</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="case-section">
+            <h2>Key Design Elements</h2>
+            <ul>
+                <li><strong>Color Psychology:</strong> Purple for Blueberry (luxury, creativity), Green for Green Apple
+                    (freshness, health), Orange for Caramel (warmth, indulgence).</li>
+                <li><strong>Typography:</strong> Elegant handwritten-style fonts that evoke a bakery/artisanal feel.
+                </li>
+                <li><strong>Floating Elements:</strong> The donuts and mint leaves appear to float, creating depth and
+                    visual interest.</li>
+                <li><strong>Prototype Interactions:</strong> Smooth transitions between flavor panels for an engaging
+                    user experience.</li>
+            </ul>
+            <p style="margin-top: 20px;"><em>Tools Used: Figma (Design + Prototyping)</em></p>
+        </div>
+
+        <div class="case-header">
+            <a href="../../index.html#projects" class="btn back-btn">Back to Projects</a>
+        </div>
+
+    </main>
+
+    <!-- Footer (Reused) -->
+    <footer>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/arish-s-a31a5737a" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/arishdesigner" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://dribbble.com/arishdesigner" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+        </div>
+        <p>© 2025 Arish S | Designed by Arish</p>
+    </footer>
+
+</body>
+
+</html>
